@@ -1,19 +1,60 @@
+@import "partials/Nav";
+@import "partials/Footer";
+
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	width: 100%;
+	background-color: #ffffff;
 	max-width: 100vw;
-	align-items: center;
-	padding: 16px;
+	font-family: $secondary-font;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: $primary-font;
-	color: $black;
 }
+
+a { text-decoration: none; }
 
 h1 {
 	font-size: 4em;
 	margin: 16px 0px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 32px;
+}
+
+p {
+	margin: 16px 0px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+section {
+	width: 100%;
+	min-height: 100vh;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.accent-button{
+	color: white;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-family: $secondary-font;
+	background: $accent;
+	padding: 8px 16px;
+	letter-spacing: 0.5px;
+	border: 4px $accent solid;
+	transition: 0.2s;
+	&:hover{
+		cursor: pointer;
+		background: lighten($accent, 15%);
+		border: 4px lighten($accent, 15%) solid;
+	}
 }
