@@ -24,7 +24,7 @@ header{
 			.logo--white {
 				opacity: 0;
 			}	
-		}	
+		}
 	}
 
 	a { 
@@ -54,7 +54,6 @@ header{
 		} 
 	}
 
-
 	nav {
 		ul {
 			display: flex;
@@ -77,6 +76,18 @@ header{
 						background: $off-white;
 					}
 				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+		nav ul {
+			justify-content: center;
+			font-size: 0.8em;
+			text-align: center;
+			li a {
+				padding: 16px 4px;
 			}
 		}
 	}
