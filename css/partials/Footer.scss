@@ -6,6 +6,6 @@ footer {
 	align-items:center;
 	justify-content:center;
 	a { letter-spacing: 1px; font-size: 0.9em;  text-decoration:none; color: white; transition: 0.2s;}
-	a:hover { color: lighten($accent, 5%); } 
+	a:hover { color: $accent-lighter; } 
 	ul { display: flex; li{ margin: 16px; }}
 }

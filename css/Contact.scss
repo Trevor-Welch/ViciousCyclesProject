@@ -1,0 +1,107 @@
+.contact_page {
+	
+	padding-top: 160px;
+	
+
+	.banner-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		max-height: 500px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		clip-path: polygon(94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%, 6% 0);
+	}
+	
+	h2 {
+		box-sizing: border-box;
+		max-width: 500px;
+		width: 100%;
+		margin: 32px auto;
+		background: black;
+		color: white;
+		padding: 8px 16px;
+		clip-path: polygon(0 0, 100% 0%, 98% 100%, 2% 100%);
+	}
+	
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		margin-bottom: 64px;
+		display: flex;
+		flex-direction: column;
+		padding: 0px 8px;
+		box-sizing: border-box;
+
+		label {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-bottom: 4px;
+			color: rgba(0,0,0,0.7);
+		}
+		input[type=text], input[type=email], select, textarea{
+			max-width: 240px;
+			font-size: 17px;
+			font-family: inherit;
+			outline:none;
+			background: inherit;
+			padding: 3px 4px;
+			border: none;
+			border-bottom: 2px solid rgba(0,0,0,0.04);
+			transition:0.2s;
+			color:rgba(0,0,0,0.7);
+			&:focus {
+				color: black;
+				border-bottom-color:$accent-lighter;
+			}
+		}
+
+		p {
+			font-size: 17px;
+			font-family: inherit;
+		}
+
+		input[type=submit]{
+			background: $accent;
+			padding: 8px 0px;
+			color: white;
+			color: bold;
+			clip-path: polygon(0 0, 100% 0%, 98% 100%, 2% 100%);
+			color: white;
+			font-size: 0.9em;
+			text-transform: uppercase;
+			font-family: $secondary-font;
+			background: $accent;
+			letter-spacing: 2px;
+			border: 4px $accent solid;
+			transition: 0.2s;
+			&:hover{
+				cursor: pointer;
+				background: lighten($accent, 15%);
+				border: 4px lighten($accent, 15%) solid;
+			}
+		}
+
+		select{
+			margin-top: 4px;
+			margin-bottom: 32px;
+		}
+
+		textarea{
+			max-width: none;
+			margin-bottom: 32px;
+			transition: none;
+		}
+
+		input:not(:last-of-type){
+			margin-bottom: 32px;
+		}
+	}
+}

@@ -63,21 +63,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0);
-  transition: 0.2s;
-  color: white;
-}
-header:hover {
-  color: black;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.13);
-}
-header:hover .logo .logo--black {
-  opacity: 1;
-}
-header:hover .logo .logo--white {
-  opacity: 0;
+  transition: 0.2s;
+  color: black;
 }
 header a {
   text-decoration: none;
@@ -93,13 +82,13 @@ header .logo img {
   max-width: 160px;
 }
 header .logo .logo--white {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   left: 0px;
   top: 0px;
 }
 header .logo .logo--black {
-  opacity: 0;
+  opacity: 1;
 }
 header nav ul {
   display: flex;
@@ -121,7 +110,7 @@ header nav ul li a {
   padding: 8px 16px;
 }
 header nav ul li a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   background: #E6E6E8;
 }
 @media screen and (max-width: 700px) {
@@ -139,14 +128,25 @@ header nav ul li a:hover {
 }
 
 .header--light {
-  color: black;
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.13);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0);
 }
 .header--light .logo .logo--black {
-  opacity: 1;
+  opacity: 0;
 }
 .header--light .logo .logo--white {
+  opacity: 1;
+}
+.header--light:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.13);
+  color: black;
+  background-color: white;
+}
+.header--light:hover .logo .logo--black {
+  opacity: 1;
+}
+.header--light:hover .logo .logo--white {
   opacity: 0;
 }
 
@@ -352,6 +352,103 @@ section {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+}
+
+.contact_page {
+  padding-top: 160px;
+}
+.contact_page .banner-image {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%, 6% 0);
+}
+.contact_page .banner-image img {
+  width: 100%;
+  height: auto;
+}
+.contact_page h2 {
+  box-sizing: border-box;
+  max-width: 500px;
+  width: 100%;
+  margin: 32px auto;
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  clip-path: polygon(0 0, 100% 0%, 98% 100%, 2% 100%);
+}
+.contact_page form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px;
+  box-sizing: border-box;
+}
+.contact_page form label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contact_page form input[type=text], .contact_page form input[type=email], .contact_page form select, .contact_page form textarea {
+  max-width: 240px;
+  font-size: 17px;
+  font-family: inherit;
+  outline: none;
+  background: inherit;
+  padding: 3px 4px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  transition: 0.2s;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contact_page form input[type=text]:focus, .contact_page form input[type=email]:focus, .contact_page form select:focus, .contact_page form textarea:focus {
+  color: black;
+  border-bottom-color: #d43a3b;
+}
+.contact_page form p {
+  font-size: 17px;
+  font-family: inherit;
+}
+.contact_page form input[type=submit] {
+  background: #C82C2D;
+  padding: 8px 0px;
+  color: white;
+  color: bold;
+  clip-path: polygon(0 0, 100% 0%, 98% 100%, 2% 100%);
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  background: #C82C2D;
+  letter-spacing: 2px;
+  border: 4px #C82C2D solid;
+  transition: 0.2s;
+}
+.contact_page form input[type=submit]:hover {
+  cursor: pointer;
+  background: #dd6464;
+  border: 4px #dd6464 solid;
+}
+.contact_page form select {
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+.contact_page form textarea {
+  max-width: none;
+  margin-bottom: 32px;
+  transition: none;
+}
+.contact_page form input:not(:last-of-type) {
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */

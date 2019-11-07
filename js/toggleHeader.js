@@ -5,9 +5,9 @@ let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   if (currentScroll > window.innerHeight) {
-    header.classList.add(light);
+    header.classList.remove(light);
     return;
   } else  {
-    header.classList.remove(light);
+    header.classList.add(light);
   }
 });
