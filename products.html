@@ -19,7 +19,7 @@
 		<nav>
 			<ul>
 				<li class="dropdown">
-					<a href="./products.html">Products &#9660;</a>
+					<a href="./products.html" class="link--active">Products &#9660;</a>
 					<div class="dropdown__content">
 						<a href="./products.html">New Products</a>
 						<a href="./products.html">Catalog</a>
@@ -34,7 +34,7 @@
 					</div>
 				</li>
 				<li class="dropdown">
-					<a href="./contact.html" class="link--active">Contact &#9660;</a>
+					<a href="./contact.html">Contact &#9660;</a>
 					<div class="dropdown__content">
 						<a href="./contact.html">USA</a>
 						<a href="./contact.html">International</a>
@@ -48,34 +48,41 @@
 	</header>
 
 	<main>
-		<section class="contact_page">
-
-			<div class="banner-image">
-				<img src="images/contact-us.jpg" alt="black and white motor">
+		<section class="product_page">
+			<div class="product">
+				<h3>VICIOUS V2</h3>
+				<img src="./images/products_02.png" alt="Side-profile image of the Vicious V2 Motorcycle">
+				<p>The latest and greatest by Vicious Cycles, offering the best in electric motorbike technology.</p>
+				<button class="accent-button">View Specs</button>
 			</div>
-			<h2>Contact Us</h2>
-			<form action="">
-				<label for="name">Name</label>
-				<input type="text" name="name" required>
-				<label for="email" required>Email</label>
-				<input type="email" name="email" required>
-				<label for="category">Category</label>
-				<select name="category">
-					<option value="inquiry">Customer Inquiry</option>
-					<option value="sales">Sales/Marketing</option>
-					<option value="support">Support</option>
-					<option value="other">Other</option>
-				</select>
-				<label for="subject">Subject</label>
-				<input type="text" name="subject"  >
-				<label for="comment">Comment</label>
-				<textarea name="comment" cols="30" rows="10" required></textarea>
-				<label for="ownership">Currently own a vicious cycle?</label>
-				<p><input type="radio" name="ownership"> <span>Yes</span> <input type="radio" name="ownership" checked> <span>No</span></p>
-				<input type="submit" value="Submit">
-
-			</form>
-
+			<div class="product__row">
+				<div class="product">
+					<h3>VICIOUS V1</h3>
+					<img src="./images/products_01.png" alt="Side-profile image of the Vicious V1 Motorcycle">
+					<p>The first and original.</p>
+					<button class="accent-button">View Specs</button>
+				</div>
+				<div class="product">
+					<h3>VICIOUS C</h3>
+					<img src="./images/products_03.png" alt="Side-profile image of the Vicious C Motorcycle">
+					<p>Same great bike, now with space for storage.</p>
+					<button class="accent-button">View Specs</button>
+				</div>
+			</div>
+			<div class="product__row">
+				<div class="product">
+					<h3>VICIOUS FX</h3>
+					<img src="./images/products_04.png" alt="Side-profile image of the Vicious FX Motorcycle">
+					<p>For those who make their own roads.</p>
+					<button class="accent-button">View Specs</button>
+				</div>
+				<div class="product">
+					<h3>VICIOUS FXS</h3>
+					<img src="./images/products_05.png" alt="Side-profile image of the Vicious FXS Motorcycle">
+					<p>Nimble, agile, quick.</p>
+					<button class="accent-button">View Specs</button>
+				</div>
+			</div>
 		</section>
 	</main>
 

@@ -1,0 +1,68 @@
+.services_page{
+	padding-top: 160px;
+
+	.banner-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		max-height: 500px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		clip-path: polygon(94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%, 6% 0);
+	}
+	
+	h2 {
+		box-sizing: border-box;
+		max-width: 500px;
+		width: 100%;
+		margin: 32px auto;
+		background: black;
+		color: white;
+		padding: 8px 16px;
+		clip-path: polygon(3% 0, 97% 0%, 100% 100%, 0 100%);
+	}
+	.hex-block {
+		background: #FAFAFA;
+		max-width: 800px;
+		margin: 64px auto;
+		display: flex;
+		align-items: center;
+		clip-path: polygon(96% 0, 100% 50%, 96% 100%, 4% 100%, 0 50%, 4% 0);
+		img {
+			clip-path: polygon(88% 0, 100% 50%, 88% 100%, 12% 100%, 0 50%, 12% 0);
+			width: 200px;
+			margin:16px;
+		}
+		.hex-text{
+			width: 100%;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 32px;
+			text-align: center;
+			h3 {
+				font-family: $primary-font;
+				font-weight: bold;
+				letter-spacing: 2px;
+			}
+			p {
+				line-height: 1.3em;
+			}
+			.accent-button {
+				clip-path: polygon(94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%, 6% 0);
+			}
+		}
+	}
+
+	.hex-block--reverse{
+		flex-direction: row-reverse; 
+	}
+
+}

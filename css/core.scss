@@ -58,3 +58,7 @@ section {
 		border: 4px lighten($accent, 15%) solid;
 	}
 }
+
+.link--active {
+	color: lighten($accent, 15%);
+}
